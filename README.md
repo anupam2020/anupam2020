@@ -6,5 +6,8 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=anupam2020&title=Commits,Repositories)](https://github.com/ryo-ma/github-profile-trophy)
 
-- name: generate-snake-game-from-github-contribution-grid
-  uses: Platane/snk@v0.0.18
+- name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk@master
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          svg_out_path: dist/github-contribution-grid-snake.svg
